@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,213 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShameOnYouLogo" translatesAutoresizingMaskIntoConstraints="NO" id="oEb-p1-Fy7">
+                                <rect key="frame" x="225" y="59" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="kCL-rg-14U"/>
+                                    <constraint firstAttribute="width" constant="150" id="teC-3w-yPD"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="E0U-wx-ji7">
+                                <rect key="frame" x="147" y="265" width="305" height="238"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="305" id="T9c-ey-AbH"/>
+                                    <constraint firstAttribute="height" constant="238" id="dxY-xc-Phv"/>
+                                </constraints>
+                                <string key="text">Where we believe that just because there's snow on the ground doesn't mean Global Warming doesn't exist. But you'd be surprised how many disagree with us. 
+
+Click below to checkout our hall of shame!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to 'Shame On You!'" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgk-IV-R68">
+                                <rect key="frame" x="134" y="227" width="333" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzd-Ja-dwp">
+                                <rect key="frame" x="191" y="528" width="219" height="34"/>
+                                <color key="backgroundColor" red="0.027110020462688275" green="0.63369191753926701" blue="0.2953019814544624" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="  View Our Hall of Shame  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Osu-eB-g90" kind="show" id="IVo-jv-TGh"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E0U-wx-ji7" firstAttribute="top" secondItem="jgk-IV-R68" secondAttribute="bottom" constant="8" id="2vz-7b-Oe5"/>
+                            <constraint firstItem="oEb-p1-Fy7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="5f4-7V-2bZ"/>
+                            <constraint firstItem="jgk-IV-R68" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A48-SK-amP"/>
+                            <constraint firstItem="oEb-p1-Fy7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JIW-kE-xDq"/>
+                            <constraint firstItem="Gzd-Ja-dwp" firstAttribute="top" secondItem="E0U-wx-ji7" secondAttribute="bottom" constant="25" id="Vo9-g5-q8F"/>
+                            <constraint firstItem="Gzd-Ja-dwp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gIO-VU-kre"/>
+                            <constraint firstItem="jgk-IV-R68" firstAttribute="top" secondItem="oEb-p1-Fy7" secondAttribute="bottom" constant="18" id="k3t-49-64z"/>
+                            <constraint firstItem="E0U-wx-ji7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ydW-sB-q5o"/>
+                            <constraint firstItem="E0U-wx-ji7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zVc-LD-KdC"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ydW-sB-q5o"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="246" y="305"/>
+        </scene>
+        <!--Hall Of Shame Table View Controller-->
+        <scene sceneID="de3-VR-IlB">
+            <objects>
+                <tableViewController id="Osu-eB-g90" customClass="HallOfShameTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="no4-R4-0go">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" id="Lcx-1H-5cO" customClass="TableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Lcx-1H-5cO" id="SE4-sH-Fs3">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hall of Shame Member" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpU-0K-djN">
+                                            <rect key="frame" x="27" y="11" width="175" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Osu-eB-g90" id="PPC-jX-EHk"/>
+                            <outlet property="delegate" destination="Osu-eB-g90" id="uCr-re-RSc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ngF-8B-vLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="903" y="287"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P53-fQ-qWT">
+            <objects>
+                <viewController id="ZAZ-iR-0fI" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0bc-YX-ws4"/>
+                        <viewControllerLayoutGuide type="bottom" id="T38-3z-dmw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IOr-ow-LJ1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GuH-WP-Z80">
+                                <rect key="frame" x="20" y="40" width="70" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Blurb" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e8u-9d-VQW">
+                                <rect key="frame" x="20" y="89" width="560" height="68"/>
+                                <color key="backgroundColor" red="0.58161810489999999" green="0.67699518250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e8u-9d-VQW" secondAttribute="height" multiplier="56:9" constant="136.88888888888886" id="VOc-dK-Fln"/>
+                                </constraints>
+                                <color key="textColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-wy-G9y">
+                                <rect key="frame" x="20" y="176" width="560" height="64"/>
+                                <color key="backgroundColor" red="0.58161810489999999" green="0.67699518250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uwF-wy-G9y" secondAttribute="height" multiplier="35:4" id="f3c-N1-aUh"/>
+                                </constraints>
+                                <string key="text">Choose an example message
+or draft one of your own</string>
+                                <color key="textColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dl2-4N-kd1">
+                                <rect key="frame" x="117" y="257" width="367" height="103"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="367" id="7hA-z8-Ssc"/>
+                                    <constraint firstAttribute="height" constant="103" id="CcN-Ba-sLf"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your custom message here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7v-5x-3Mr">
+                                <rect key="frame" x="20" y="382" width="560" height="124"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="qId-RS-qE1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-nE-ywe">
+                                <rect key="frame" x="178" y="526" width="244" height="34"/>
+                                <color key="backgroundColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="  Shame Them on Facebook  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58161810485212639" green="0.67699518250002433" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dl2-4N-kd1" firstAttribute="top" secondItem="uwF-wy-G9y" secondAttribute="bottom" constant="17" id="3CD-hA-g4a"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z7v-5x-3Mr" secondAttribute="trailing" id="7a3-4Z-UmU"/>
+                            <constraint firstItem="GuH-WP-Z80" firstAttribute="top" secondItem="0bc-YX-ws4" secondAttribute="bottom" constant="20" id="IrQ-bi-e7a"/>
+                            <constraint firstItem="uwF-wy-G9y" firstAttribute="top" secondItem="e8u-9d-VQW" secondAttribute="bottom" constant="19" id="O7g-ZK-5zb"/>
+                            <constraint firstItem="dl2-4N-kd1" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="QZJ-vo-wQ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uwF-wy-G9y" secondAttribute="trailing" id="SAP-VX-r8h"/>
+                            <constraint firstItem="tda-nE-ywe" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="T9Y-VV-khO"/>
+                            <constraint firstItem="z7v-5x-3Mr" firstAttribute="top" secondItem="dl2-4N-kd1" secondAttribute="bottom" constant="22" id="UTj-XS-WR9"/>
+                            <constraint firstItem="tda-nE-ywe" firstAttribute="top" secondItem="z7v-5x-3Mr" secondAttribute="bottom" constant="20" id="bzb-Uo-LSY"/>
+                            <constraint firstItem="e8u-9d-VQW" firstAttribute="top" secondItem="GuH-WP-Z80" secondAttribute="bottom" constant="19" id="cLg-B0-v7I"/>
+                            <constraint firstItem="tda-nE-ywe" firstAttribute="top" secondItem="z7v-5x-3Mr" secondAttribute="bottom" constant="20" id="dL4-hW-7Tl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="e8u-9d-VQW" secondAttribute="leading" id="gB4-Du-YmJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="z7v-5x-3Mr" secondAttribute="leading" id="k6o-qy-Oyc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e8u-9d-VQW" secondAttribute="trailing" id="lHI-qR-dSa"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GuH-WP-Z80" secondAttribute="leading" id="rbh-aY-ydo"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="uwF-wy-G9y" secondAttribute="leading" id="wAc-He-kOQ"/>
+                            <constraint firstItem="uwF-wy-G9y" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="yaf-Cu-zp8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dL4-hW-7Tl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NW7-6B-ok1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1610" y="305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ShameOnYouLogo" width="170" height="160"/>
+    </resources>
 </document>
