@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DAO.h"
 
 @interface HallOfShameTableViewController : UITableViewController
+
+@property (nonatomic, retain) DAO * dao;
 
 @end

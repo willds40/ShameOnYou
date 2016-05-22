@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BB772D51CEF8C4B0007576F /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB772D41CEF8C4B0007576F /* WelcomeViewController.m */; };
+		7B5F644C1CEFB06F00495225 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F644B1CEFB06F00495225 /* Social.framework */; };
+		7B5F646E1CEFB70D00495225 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F64631CEFB70D00495225 /* Bolts.framework */; };
+		7B5F646F1CEFB70D00495225 /* DocSets in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F64641CEFB70D00495225 /* DocSets */; };
+		7B5F64701CEFB70D00495225 /* FacebookSDKStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F64651CEFB70D00495225 /* FacebookSDKStrings.bundle */; };
+		7B5F64711CEFB70D00495225 /* FBAudienceNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F64661CEFB70D00495225 /* FBAudienceNetwork.framework */; };
+		7B5F64721CEFB70D00495225 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F64671CEFB70D00495225 /* FBSDKCoreKit.framework */; };
+		7B5F64731CEFB70D00495225 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F64681CEFB70D00495225 /* FBSDKLoginKit.framework */; };
+		7B5F64741CEFB70D00495225 /* FBSDKMessengerShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F64691CEFB70D00495225 /* FBSDKMessengerShareKit.framework */; };
+		7B5F64751CEFB70D00495225 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B5F646A1CEFB70D00495225 /* FBSDKShareKit.framework */; };
+		7B5F64761CEFB70D00495225 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F646B1CEFB70D00495225 /* LICENSE.txt */; };
+		7B5F64771CEFB70D00495225 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F646C1CEFB70D00495225 /* README.txt */; };
+		7B5F64781CEFB70D00495225 /* Samples in Resources */ = {isa = PBXBuildFile; fileRef = 7B5F646D1CEFB70D00495225 /* Samples */; };
+		7BA2B4A51CEFA03400329196 /* ShameeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2B4A41CEFA03400329196 /* ShameeViewController.m */; };
 		7BB772D81CEF8DE60007576F /* HallOfShameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB772D71CEF8DE60007576F /* HallOfShameTableViewController.m */; };
 		7BB772FE1CEF97D80007576F /* MyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB772FD1CEF97D80007576F /* MyTableViewCell.m */; };
 		7BB773011CEF9A480007576F /* DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BB773001CEF9A480007576F /* DAO.m */; };
 		BE1A38CA1CEF77F4003644BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1A38C91CEF77F4003644BC /* main.m */; };
 		BE1A38CD1CEF77F4003644BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1A38CC1CEF77F4003644BC /* AppDelegate.m */; };
-		BE1A38D01CEF77F4003644BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1A38CF1CEF77F4003644BC /* ViewController.m */; };
 		BE1A38D31CEF77F4003644BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1A38D11CEF77F4003644BC /* Main.storyboard */; };
 		BE1A38D51CEF77F4003644BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1A38D41CEF77F4003644BC /* Assets.xcassets */; };
 		BE1A38D81CEF77F4003644BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE1A38D61CEF77F4003644BC /* LaunchScreen.storyboard */; };
@@ -39,8 +50,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7BB772D31CEF8C4B0007576F /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
-		7BB772D41CEF8C4B0007576F /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		7B5F644B1CEFB06F00495225 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		7B5F64631CEFB70D00495225 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		7B5F64641CEFB70D00495225 /* DocSets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DocSets; sourceTree = "<group>"; };
+		7B5F64651CEFB70D00495225 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
+		7B5F64661CEFB70D00495225 /* FBAudienceNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBAudienceNetwork.framework; sourceTree = "<group>"; };
+		7B5F64671CEFB70D00495225 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		7B5F64681CEFB70D00495225 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		7B5F64691CEFB70D00495225 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKMessengerShareKit.framework; sourceTree = "<group>"; };
+		7B5F646A1CEFB70D00495225 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		7B5F646B1CEFB70D00495225 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		7B5F646C1CEFB70D00495225 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		7B5F646D1CEFB70D00495225 /* Samples */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Samples; sourceTree = "<group>"; };
+		7BA2B4A31CEFA03400329196 /* ShameeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShameeViewController.h; sourceTree = "<group>"; };
+		7BA2B4A41CEFA03400329196 /* ShameeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShameeViewController.m; sourceTree = "<group>"; };
 		7BB772D61CEF8DE60007576F /* HallOfShameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallOfShameTableViewController.h; sourceTree = "<group>"; };
 		7BB772D71CEF8DE60007576F /* HallOfShameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallOfShameTableViewController.m; sourceTree = "<group>"; };
 		7BB772FC1CEF97D80007576F /* MyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewCell.h; sourceTree = "<group>"; };
@@ -51,8 +74,6 @@
 		BE1A38C91CEF77F4003644BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BE1A38CB1CEF77F4003644BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE1A38CC1CEF77F4003644BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BE1A38CE1CEF77F4003644BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BE1A38CF1CEF77F4003644BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BE1A38D21CEF77F4003644BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE1A38D41CEF77F4003644BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE1A38D71CEF77F4003644BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -70,6 +91,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5F64711CEFB70D00495225 /* FBAudienceNetwork.framework in Frameworks */,
+				7B5F64721CEFB70D00495225 /* FBSDKCoreKit.framework in Frameworks */,
+				7B5F64731CEFB70D00495225 /* FBSDKLoginKit.framework in Frameworks */,
+				7B5F64751CEFB70D00495225 /* FBSDKShareKit.framework in Frameworks */,
+				7B5F644C1CEFB06F00495225 /* Social.framework in Frameworks */,
+				7B5F64741CEFB70D00495225 /* FBSDKMessengerShareKit.framework in Frameworks */,
+				7B5F646E1CEFB70D00495225 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,9 +118,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7BA2B4A01CEF9D8500329196 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				7BB772FF1CEF9A480007576F /* DAO.h */,
+				7BB773001CEF9A480007576F /* DAO.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		7BA2B4A11CEF9D9C00329196 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BB772D61CEF8DE60007576F /* HallOfShameTableViewController.h */,
+				7BB772D71CEF8DE60007576F /* HallOfShameTableViewController.m */,
+				7BA2B4A31CEFA03400329196 /* ShameeViewController.h */,
+				7BA2B4A41CEFA03400329196 /* ShameeViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7BA2B4A21CEF9DE800329196 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE1A38D11CEF77F4003644BC /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		BE1A38BC1CEF77F4003644BC = {
 			isa = PBXGroup;
 			children = (
+				7B5F644B1CEFB06F00495225 /* Social.framework */,
 				BE1A38C71CEF77F4003644BC /* ShameOnYou */,
 				BE1A38E11CEF77F5003644BC /* ShameOnYouTests */,
 				BE1A38EC1CEF77F5003644BC /* ShameOnYouUITests */,
@@ -115,20 +172,9 @@
 			children = (
 				BE1A38CB1CEF77F4003644BC /* AppDelegate.h */,
 				BE1A38CC1CEF77F4003644BC /* AppDelegate.m */,
-				BE1A38CE1CEF77F4003644BC /* ViewController.h */,
-				BE1A38CF1CEF77F4003644BC /* ViewController.m */,
-				BE1A38D11CEF77F4003644BC /* Main.storyboard */,
-				7BB772D31CEF8C4B0007576F /* WelcomeViewController.h */,
-				7BB772D41CEF8C4B0007576F /* WelcomeViewController.m */,
-				7BB772D61CEF8DE60007576F /* HallOfShameTableViewController.h */,
-				7BB772FC1CEF97D80007576F /* MyTableViewCell.h */,
-				7BB772FD1CEF97D80007576F /* MyTableViewCell.m */,
-				7BB772D71CEF8DE60007576F /* HallOfShameTableViewController.m */,
-				7BB772FF1CEF9A480007576F /* DAO.h */,
-				7BB773001CEF9A480007576F /* DAO.m */,
-				BE1A38D41CEF77F4003644BC /* Assets.xcassets */,
-				BE1A38D61CEF77F4003644BC /* LaunchScreen.storyboard */,
-				BE1A38D91CEF77F4003644BC /* Info.plist */,
+				7BA2B4A01CEF9D8500329196 /* API */,
+				7BA2B4A21CEF9DE800329196 /* Views */,
+				7BA2B4A11CEF9D9C00329196 /* Controllers */,
 				BE1A38C81CEF77F4003644BC /* Supporting Files */,
 			);
 			path = ShameOnYou;
@@ -137,6 +183,22 @@
 		BE1A38C81CEF77F4003644BC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B5F64631CEFB70D00495225 /* Bolts.framework */,
+				7B5F64641CEFB70D00495225 /* DocSets */,
+				7B5F64651CEFB70D00495225 /* FacebookSDKStrings.bundle */,
+				7B5F64661CEFB70D00495225 /* FBAudienceNetwork.framework */,
+				7B5F64671CEFB70D00495225 /* FBSDKCoreKit.framework */,
+				7B5F64681CEFB70D00495225 /* FBSDKLoginKit.framework */,
+				7B5F64691CEFB70D00495225 /* FBSDKMessengerShareKit.framework */,
+				7B5F646A1CEFB70D00495225 /* FBSDKShareKit.framework */,
+				7B5F646B1CEFB70D00495225 /* LICENSE.txt */,
+				7B5F646C1CEFB70D00495225 /* README.txt */,
+				7B5F646D1CEFB70D00495225 /* Samples */,
+				BE1A38D41CEF77F4003644BC /* Assets.xcassets */,
+				BE1A38D61CEF77F4003644BC /* LaunchScreen.storyboard */,
+				BE1A38D91CEF77F4003644BC /* Info.plist */,
+				7BB772FC1CEF97D80007576F /* MyTableViewCell.h */,
+				7BB772FD1CEF97D80007576F /* MyTableViewCell.m */,
 				BE1A38C91CEF77F4003644BC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -266,8 +328,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5F64761CEFB70D00495225 /* LICENSE.txt in Resources */,
+				7B5F646F1CEFB70D00495225 /* DocSets in Resources */,
+				7B5F64701CEFB70D00495225 /* FacebookSDKStrings.bundle in Resources */,
 				BE1A38D81CEF77F4003644BC /* LaunchScreen.storyboard in Resources */,
+				7B5F64781CEFB70D00495225 /* Samples in Resources */,
 				BE1A38D51CEF77F4003644BC /* Assets.xcassets in Resources */,
+				7B5F64771CEFB70D00495225 /* README.txt in Resources */,
 				BE1A38D31CEF77F4003644BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,11 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1A38D01CEF77F4003644BC /* ViewController.m in Sources */,
-				7BB772D51CEF8C4B0007576F /* WelcomeViewController.m in Sources */,
 				7BB772D81CEF8DE60007576F /* HallOfShameTableViewController.m in Sources */,
 				7BB772FE1CEF97D80007576F /* MyTableViewCell.m in Sources */,
 				BE1A38CD1CEF77F4003644BC /* AppDelegate.m in Sources */,
+				7BA2B4A51CEFA03400329196 /* ShameeViewController.m in Sources */,
 				BE1A38CA1CEF77F4003644BC /* main.m in Sources */,
 				7BB773011CEF9A480007576F /* DAO.m in Sources */,
 			);
@@ -442,6 +508,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShameOnYou",
+				);
 				INFOPLIST_FILE = ShameOnYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comwds.ShameOnYou;
@@ -456,6 +526,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShameOnYou",
+				);
 				INFOPLIST_FILE = ShameOnYou/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = comwds.ShameOnYou;

@@ -10,4 +10,9 @@
 
 @interface DAO : NSObject
 
+@property(nonatomic) NSMutableArray * arrayOfNames;
+
++ (DAO *)sharedInstance;
+- (void)getNamesFromWiki; 
+
 @end

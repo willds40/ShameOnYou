@@ -7,10 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Welcome View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -116,15 +116,18 @@ Click below to checkout our hall of shame!</string>
                             <outlet property="delegate" destination="Osu-eB-g90" id="uCr-re-RSc"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="ZAZ-iR-0fI" kind="show" identifier="lastSegue" id="zCb-GT-2rJ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ngF-8B-vLs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="903" y="287"/>
+            <point key="canvasLocation" x="945" y="287"/>
         </scene>
-        <!--View Controller-->
+        <!--Shamee View Controller-->
         <scene sceneID="P53-fQ-qWT">
             <objects>
-                <viewController id="ZAZ-iR-0fI" sceneMemberID="viewController">
+                <viewController id="ZAZ-iR-0fI" customClass="ShameeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0bc-YX-ws4"/>
                         <viewControllerLayoutGuide type="bottom" id="T38-3z-dmw"/>
@@ -139,50 +142,26 @@ Click below to checkout our hall of shame!</string>
                                 <color key="textColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Blurb" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="e8u-9d-VQW">
-                                <rect key="frame" x="20" y="89" width="560" height="68"/>
-                                <color key="backgroundColor" red="0.58161810489999999" green="0.67699518250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="e8u-9d-VQW" secondAttribute="height" multiplier="56:9" constant="136.88888888888886" id="VOc-dK-Fln"/>
-                                </constraints>
-                                <color key="textColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-wy-G9y">
-                                <rect key="frame" x="20" y="176" width="560" height="64"/>
-                                <color key="backgroundColor" red="0.58161810489999999" green="0.67699518250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="uwF-wy-G9y" secondAttribute="height" multiplier="35:4" id="f3c-N1-aUh"/>
-                                </constraints>
-                                <string key="text">Choose an example message
-or draft one of your own</string>
-                                <color key="textColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dl2-4N-kd1">
-                                <rect key="frame" x="117" y="257" width="367" height="103"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="367" id="7hA-z8-Ssc"/>
-                                    <constraint firstAttribute="height" constant="103" id="CcN-Ba-sLf"/>
-                                </constraints>
-                            </pickerView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter your custom message here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z7v-5x-3Mr">
-                                <rect key="frame" x="20" y="382" width="560" height="124"/>
+                                <rect key="frame" x="20" y="224" width="560" height="230"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="124" id="qId-RS-qE1"/>
+                                    <constraint firstAttribute="height" constant="230" id="GgC-Tm-18x"/>
+                                    <constraint firstAttribute="width" secondItem="z7v-5x-3Mr" secondAttribute="height" multiplier="56:23" id="MGk-lG-W2y"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GgC-Tm-18x"/>
+                                    </mask>
+                                </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-nE-ywe">
-                                <rect key="frame" x="178" y="526" width="244" height="34"/>
+                                <rect key="frame" x="235" y="526" width="130" height="34"/>
                                 <color key="backgroundColor" red="0.070001741490000005" green="0.1223651073" blue="0.47232902490000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="  Shame Them on Facebook  ">
+                                <state key="normal" title="  Shame Them  ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -190,27 +169,29 @@ or draft one of your own</string>
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shameTheShameeButton:" destination="ZAZ-iR-0fI" eventType="touchUpInside" id="06k-cB-1Km"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write Your Shaming Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNU-72-V3p">
+                                <rect key="frame" x="130" y="123" width="341" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.58161810485212639" green="0.67699518250002433" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dl2-4N-kd1" firstAttribute="top" secondItem="uwF-wy-G9y" secondAttribute="bottom" constant="17" id="3CD-hA-g4a"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="z7v-5x-3Mr" secondAttribute="trailing" id="7a3-4Z-UmU"/>
-                            <constraint firstItem="GuH-WP-Z80" firstAttribute="top" secondItem="0bc-YX-ws4" secondAttribute="bottom" constant="20" id="IrQ-bi-e7a"/>
-                            <constraint firstItem="uwF-wy-G9y" firstAttribute="top" secondItem="e8u-9d-VQW" secondAttribute="bottom" constant="19" id="O7g-ZK-5zb"/>
-                            <constraint firstItem="dl2-4N-kd1" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="QZJ-vo-wQ0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="uwF-wy-G9y" secondAttribute="trailing" id="SAP-VX-r8h"/>
-                            <constraint firstItem="tda-nE-ywe" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="T9Y-VV-khO"/>
-                            <constraint firstItem="z7v-5x-3Mr" firstAttribute="top" secondItem="dl2-4N-kd1" secondAttribute="bottom" constant="22" id="UTj-XS-WR9"/>
-                            <constraint firstItem="tda-nE-ywe" firstAttribute="top" secondItem="z7v-5x-3Mr" secondAttribute="bottom" constant="20" id="bzb-Uo-LSY"/>
-                            <constraint firstItem="e8u-9d-VQW" firstAttribute="top" secondItem="GuH-WP-Z80" secondAttribute="bottom" constant="19" id="cLg-B0-v7I"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="GuH-WP-Z80" secondAttribute="leading" id="0kx-yK-gAV"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="z7v-5x-3Mr" secondAttribute="leading" id="6Ar-fD-eCN"/>
+                            <constraint firstItem="RNU-72-V3p" firstAttribute="top" secondItem="GuH-WP-Z80" secondAttribute="bottom" constant="53" id="Coe-VX-sLd"/>
+                            <constraint firstItem="GuH-WP-Z80" firstAttribute="top" secondItem="0bc-YX-ws4" secondAttribute="bottom" constant="20" id="EdQ-3v-GZI"/>
+                            <constraint firstItem="tda-nE-ywe" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="Qg4-ej-xy4"/>
+                            <constraint firstItem="tda-nE-ywe" firstAttribute="top" secondItem="z7v-5x-3Mr" secondAttribute="bottom" constant="72" id="Vlf-eq-Zp8"/>
                             <constraint firstItem="tda-nE-ywe" firstAttribute="top" secondItem="z7v-5x-3Mr" secondAttribute="bottom" constant="20" id="dL4-hW-7Tl"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="e8u-9d-VQW" secondAttribute="leading" id="gB4-Du-YmJ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="z7v-5x-3Mr" secondAttribute="leading" id="k6o-qy-Oyc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="e8u-9d-VQW" secondAttribute="trailing" id="lHI-qR-dSa"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="GuH-WP-Z80" secondAttribute="leading" id="rbh-aY-ydo"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="uwF-wy-G9y" secondAttribute="leading" id="wAc-He-kOQ"/>
-                            <constraint firstItem="uwF-wy-G9y" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="yaf-Cu-zp8"/>
+                            <constraint firstItem="RNU-72-V3p" firstAttribute="centerX" secondItem="IOr-ow-LJ1" secondAttribute="centerX" id="ouL-tD-Z5Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z7v-5x-3Mr" secondAttribute="trailing" id="qNw-52-dqk"/>
+                            <constraint firstItem="z7v-5x-3Mr" firstAttribute="top" secondItem="RNU-72-V3p" secondAttribute="bottom" constant="71" id="rrh-bR-Pw6"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -218,10 +199,14 @@ or draft one of your own</string>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="customShameMsgTextField" destination="z7v-5x-3Mr" id="Opn-GB-jv8"/>
+                        <outlet property="shameeName" destination="GuH-WP-Z80" id="bQJ-lP-JAT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NW7-6B-ok1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1610" y="305"/>
+            <point key="canvasLocation" x="1607" y="287"/>
         </scene>
     </scenes>
     <resources>
